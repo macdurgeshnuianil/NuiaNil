@@ -1,0 +1,43 @@
+{
+  "id": "price-rotator-3asin",
+  "name": "Price Rotator for 3 ASINs",
+  "steps": [
+    {
+      "action": "go_to_tab",
+      "tab": 1
+    },
+    {
+      "action": "set_price",
+      "price": 346
+    },
+    {
+      "action": "wait",
+      "milliseconds": 2000
+    },
+    {
+      "action": "click_save"
+    },
+    {
+      "action": "wait",
+      "milliseconds": 2000
+    },
+    {
+      "action": "click_save_again"
+    },
+    {
+      "action": "wait_for_text",
+      "text": "Changes submitted"
+    },
+    {
+      "action": "click_done"
+    },
+    {
+      "action": "switch_tab",
+      "tab": 2
+    },
+    {
+      "action": "repeat_for_next_asin"
+    }
+  ],
+  "description": "Rotates price across 3 ASINs with double click save and confirmation wait."
+}
